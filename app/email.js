@@ -27,7 +27,7 @@ app.post('/secure_email', getUserId, (req, res) => {
         to: req.body.to,
         subject: req.body.subject,
         attachment:[
-            {data:"<html>"+req.body.text + '<br /><br /><br /><br /><br /><strong><small>Key used : '+req.user_id+"</small><br /><p style='font-size:7px;'>Please do not use this service for illegal use. We are tracking your activities through the key provided to you.</p></strong></html>", alternative:true},
+            {data:"<html>"+req.body.text + '<br /><br /><br /><br /><br /><strong><small>Key used : '+req.user_id+"</small><br /><p style='font-size:9px;'>Please do not use this service for illegal use. We are tracking your activities through the key provided to you.</p></strong></html>", alternative:true},
         ]
     }, function (err, message) {
         err ? res.send({status:false,error:err}) : res.send({status:true,message:message});
