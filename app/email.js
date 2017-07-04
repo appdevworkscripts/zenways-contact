@@ -2,8 +2,8 @@ var email = require("emailjs");
 var app = require('express').Router();
 var Contact = require('../model/contact');
 var server = email.server.connect({
-    user: "testuserdmt@gmail.com",
-    password: "Testuserdmt_1234",
+    user: "testuserzencon@gmail.com",
+    password: "Abcd#12345",
     host: "smtp.gmail.com",
     port: 465,
     ssl: true
