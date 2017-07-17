@@ -23,7 +23,7 @@ var getUserId = function (req, res, next) {
 app.post('/secure_email', getUserId, (req, res) => {
     server.send({
         text: '',
-        from: "Contact Email Service <testuserdmt@gmail.com>",
+        from: "Contact Email Service <testuserzencon@gmail.com>",
         to: req.body.to,
         subject: req.body.subject,
         attachment:[
